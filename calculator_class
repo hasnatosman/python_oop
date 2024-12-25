@@ -1,0 +1,48 @@
+# making a class.......................................
+# class WaltonUsta:
+#     """Our new car class."""
+#     def diving(self):
+#         run_the_car
+#
+#     def music(self):
+#         run_the_music
+#
+#     def fuel(self):
+#         run_the_feul
+#
+#     def horn(self):
+#         make_sound_polution
+#
+# my_car = WaltonUsta()
+# wife_car = WaltonUsta()
+from function import my_list
+
+
+class Calculator:
+    """Do addition, subtraction, multiplication and division"""
+    def addition(self, a, b):
+        self.a = a
+        self.b = b
+        return a + b
+
+    def subtraction(self, a, b):
+        return a - b
+
+    def multiplication(self, a, b):
+        return a * b
+
+    def division(self, a, b):
+        try:
+            return a / b
+        except ZeroDivisionError:
+            return "It is impossible!"
+
+my_calculator = Calculator()
+temp = my_calculator.addition(10,15)
+print(temp)
+temp = my_calculator.subtraction(10,15)
+print(temp)
+temp = my_calculator.multiplication(10,15)
+print(temp)
+temp = my_calculator.division(10,15)
+print(temp)
